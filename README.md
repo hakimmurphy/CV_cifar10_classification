@@ -51,9 +51,13 @@ A summary of key layers:
 
 ```plaintext
 Input: 32×32×3 image
-Conv2D → Conv2D → MaxPool → Dropout
-Conv2D → Conv2D → MaxPool → Dropout
-Flatten → Dense → Dropout → Dense(10, softmax)
+Pretrained ResNet50 (include
+_
+top=False) backbone
+Flatten output maps
+Dense(512, relu) → BatchNorm → Dropout(0.5)
+Dense(256, relu) → BatchNorm → Dropout(0.2)
+Dense(10, softmax) output
 ```
 
 ## Installation
