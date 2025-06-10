@@ -128,7 +128,3 @@ After training for 10 epochs, the model achieved:
 ├── README.md                # This file
 └── .gitignore               # Git ignore rules
 ```
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
