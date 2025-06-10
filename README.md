@@ -100,14 +100,12 @@ Dense(10, softmax) output
 
 3. Adjust hyperparameters (learning rate, batch size, epochs) in the notebook as needed.
 
-## Training Results
+## Training Results (5 runs)
 
-After training for 10 epochs, the model achieved:
+After training for 10 epochs, the models achieved:
 
-* **Training Loss**: \~0.32
-* **Validation Loss**: \~0.83
-* **Training Accuracy**: \~90%
-* **Validation Accuracy**: \~75%
+* **Test Loss**: 1.72 ± 0.81  
+* **Test Accuracy**: 42.4 ± 26.0 %
 
 ## Key Findings
 
