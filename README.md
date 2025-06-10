@@ -15,7 +15,6 @@ This repository contains a deep learning project for classifying images in the C
 * [Key Findings](#key-findings)
 * [Next Steps](#next-steps)
 * [Folder Structure](#folder-structure)
-* [License](#license)
 
 ---
 
