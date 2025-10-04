@@ -4,7 +4,7 @@ This repository contains a deep learning project for classifying images in the C
 
 ---
 
-## Table of Contents
+## 📚 Table of Contents
 
 * [Project Overview](#project-overview)
 * [Dataset](#dataset)
@@ -18,7 +18,7 @@ This repository contains a deep learning project for classifying images in the C
 
 ---
 
-## Project Overview
+## 🎯 Project Overview
 
 The goal of this project is to build and train a CNN that can accurately classify 32×32 color images into one of 10 categories (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck).
 
@@ -30,7 +30,21 @@ The workflow includes:
 4. Evaluating performance on validation data.
 5. Visualizing loss and accuracy curves.
 
-## Dataset
+---
+
+## 🗂️ Folder Structure
+
+```plaintext
+├── figures/                 # Generated plots (loss_accuracy.png)
+├── Hakim_Murphy_CV_cifar10.ipynb  # Jupyter notebook
+├── requirements.txt         # Python dependencies
+├── README.md                # This file
+└── .gitignore               # Git ignore rules
+```
+
+---
+
+## 🗃️ Dataset
 
 * **CIFAR-10**: 60,000 images (50K train / 10K test)
 * 10 classes, 6,000 images per class
@@ -38,7 +52,9 @@ The workflow includes:
 
 Built-in Keras utility is used to download and preprocess the data.
 
-## Model Architecture
+--- 
+
+## 🏗️ Model Architecture
 
 The CNN consists of:
 
@@ -60,7 +76,9 @@ Dense(256, relu) → BatchNorm → Dropout(0.2)
 Dense(10, softmax) output
 ```
 
-## Installation
+--- 
+
+## 🛠️ Installation
 
 1. Clone the repository:
 
@@ -83,7 +101,9 @@ Dense(10, softmax) output
    pip install -r requirements.txt
    ```
 
-## Usage
+---
+
+## ▶️ Usage
 
 1. Open the Jupyter notebook:
 
@@ -100,32 +120,40 @@ Dense(10, softmax) output
 
 3. Adjust hyperparameters (learning rate, batch size, epochs) in the notebook as needed.
 
-## Training Results (5 runs)
+---
+
+## 📈 Training Results (5 runs)
 
 After training for 10 epochs, the models achieved:
 
 * **Test Loss**: 1.72 ± 0.81  
 * **Test Accuracy**: 42.4 ± 26.0 %
 
-## Key Findings
+---
+
+## 🔍 Key Findings
 
 * **Fast initial learning**: Rapid drop in loss and rise in accuracy in the first 5–6 epochs.
 * **Healthy generalization** through epoch 6: Training and validation metrics closely track.
 * **Mild overfitting** after epoch 6: Validation plateaus while training improves.
 
-## Next Steps
+---
+
+## 🧭 Next Steps
 
 * Implement **EarlyStopping** callback to halt training when validation stops improving.
 * Apply stronger **regularization** (dropout, weight decay) or **augmentations** to reduce overfitting.
 * Introduce a **learning rate scheduler** (e.g., ReduceLROnPlateau).
 * Save the best model weights using **ModelCheckpoint**.
 
-## Folder Structure
+---
 
-```plaintext
-├── figures/                 # Generated plots (loss_accuracy.png)
-├── Hakim_Murphy_CV_cifar10.ipynb  # Jupyter notebook
-├── requirements.txt         # Python dependencies
-├── README.md                # This file
-└── .gitignore               # Git ignore rules
-```
+## 📄 License
+MIT
+
+---
+
+## 🗣️ Author
+Hakim Murphy
+
+
